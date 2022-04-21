@@ -51,90 +51,50 @@
 }
 
 .sec2 {
-  height: 48vw;
   background-color: pink;
+  height: 48vw;
 }
 
-.wrap .sec2 .container-lg h4 {
-  line-height: 8vw;
+.sec2 .container-lg h4 {
+  line-height: 5rem;
 }
 
-.wrap .sec2 .container-lg .row .cuponbox {
+#mySwiper .swiper-wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#mySwiper .swiper-wrapper .swiper-slide .cupon {
+  position: relative;
+  width: 100%;
+  height: 200px;
   background-color: white;
   border: 3px solid black;
   border-radius: 30px;
-  height: 200px;
 }
 
-.wrap .sec2 .container-lg .row .cuponbox .tr {
-  color: #ff0095;
-  font-size: 12px;
+#mySwiper .swiper-wrapper .swiper-slide .cupon img {
+  width: 20%;
 }
 
-.wrap .sec2 .container-lg .row .cuponbox .middlef {
-  color: #ff0095;
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.wrap .sec2 .container-lg .row .cuponbox .benefit {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: #ff0095;
-  font-size: 50px;
-  font-weight: 900;
-}
-
-.wrap .sec2 .container-lg .row .cuponbox .benefit p {
-  font-family: 'GL';
-  font-weight: 100;
-}
-
-.wrap .sec2 .container-lg .row .cuponbox .trb {
-  color: #2db2ff;
-  font-size: 12px;
-}
-
-.wrap .sec2 .container-lg .row .cuponbox .middlefb {
-  color: #2db2ff;
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.wrap .sec2 .container-lg .row .cuponbox .benefitb {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: #2db2ff;
-  font-size: 50px;
-  font-weight: 900;
-}
-
-.wrap .sec2 .container-lg .row .cuponbox .benefitb p {
-  font-family: 'GL';
-  font-weight: 100;
-}
-
-.wrap .sec2 .container-lg .row .cuponbox img {
-  max-width: 130px;
-}
-
-.cupon:before {
-  content: "";
+.swiper-slide:before {
+  content: '';
   position: absolute;
-  width: 94%;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(2%, 5%);
+          transform: translate(2%, 5%);
+  width: 100%;
   height: 200px;
   border: 3px solid black;
   border-radius: 30px;
-  top: 5%;
-  left: 5%;
 }
 
-.cb1:before {
+.backP:before {
   background-color: #ff0095;
 }
 
-.cb2:before {
+.backB:before {
   background-color: #2db2ff;
 }
