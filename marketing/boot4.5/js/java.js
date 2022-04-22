@@ -16,7 +16,6 @@ window.onload = function(){
           // },
           loop : true, 
           spaceBetween: 30,
-          centeredSlides: true,
           slidesPerView: 2,
       });
 }
